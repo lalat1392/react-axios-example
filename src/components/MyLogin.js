@@ -15,6 +15,7 @@ function MyLogin() {
     }
     const onfinsihhandler = async (values) => {
         console.log("Values "+values);
+        console.log(user);
         try {
             const res = await axios.post('/users',values);
             console.log(res);
